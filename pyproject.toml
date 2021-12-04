@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bqotd"
+version = "0.1.0"
+description = "A buddhist quote every day."
+authors = ["Daniel Kapitan"]
+license = "GPL"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.3"
+ndjson = "^0.3.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
