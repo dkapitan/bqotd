@@ -1,9 +1,12 @@
+from pathlib import Path
+
 import click
 import ndjson
 from random import choice
 
 
-with open("quotes.json", "r") as file:
+PWD = Path(__file__).parent.resolve()
+with open(PWD / "quotes.json", "r") as file:
     quotes = ndjson.load(file)
 
 @click.command()
