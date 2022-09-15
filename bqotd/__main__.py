@@ -12,7 +12,7 @@ with open(PWD / "quotes.json", "r") as file:
 @click.command()
 def bqotd():
     quote = choice(quotes)
-    print(f"{quote['quote']}\n  ~ {quote['attribution']}, {quote['source']}")
+    print(f"{quote['quote']}\n  ~ {quote['attribution']}, {quote['source']}\n")
 
 
 if __name__ == "__main__":
