@@ -1,0 +1,23 @@
+[project]
+name = "bqotd"
+version = "0.2.0"
+description = "Buddhist quote of the day"
+readme = "README.md"
+authors = [
+    { name = "Daniel Kapitan", email = "daniel@kapitan.net" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ndjson>=0.3.1",
+]
+
+[project.scripts]
+bqotd = "bqotd:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+include = [
+  "*.json",
+]
